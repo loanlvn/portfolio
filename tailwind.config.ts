@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// tailwind.config.ts
+>>>>>>> 9b622526fa6f3cee4ad79ab752495077fd5b01b8
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
@@ -33,14 +37,19 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+<<<<<<< HEAD
       boxShadow: {
         soft: "0 8px 30px rgba(0,0,0,.08)",
       },
+=======
+      boxShadow: { soft: "0 8px 30px rgba(0,0,0,.08)" },
+>>>>>>> 9b622526fa6f3cee4ad79ab752495077fd5b01b8
       backgroundImage: {
         glow:
           "radial-gradient(50% 50% at 50% 0%, rgba(99,102,241,.25), rgba(56,189,248,0) 70%), " +
           "radial-gradient(50% 50% at 100% 100%, rgba(16,185,129,.18), rgba(56,189,248,0) 70%)",
       },
+<<<<<<< HEAD
       keyframes: {
         shine: {
           "0%": { backgroundPosition: "100% 0" },
@@ -50,6 +59,8 @@ export default {
       animation: {
         shine: "shine 5s linear infinite",
       },
+=======
+>>>>>>> 9b622526fa6f3cee4ad79ab752495077fd5b01b8
     },
   },
   plugins: [
@@ -57,8 +68,12 @@ export default {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("@tailwindcss/aspect-ratio"),
+<<<<<<< HEAD
     plugin(({ addVariant }) => {
       addVariant("hocus", ["&:hover", "&:focus"]);
     }),
+=======
+    plugin(({ addVariant }) => addVariant("hocus", ["&:hover", "&:focus"])),
+>>>>>>> 9b622526fa6f3cee4ad79ab752495077fd5b01b8
   ],
 } satisfies Config;
