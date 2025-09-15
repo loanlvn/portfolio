@@ -1,16 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import type { ReactNode } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "../../lib/utils";
 
-type NavItem = { name: string; link: string; icon?: JSX.Element };
+type NavItem = { name: string; link: string; icon?: ReactNode }; 
 
-export default function FloatingNav({
-  navItems,
-  className,
-}: {
-  navItems: NavItem[];
-  className?: string;
-}) {
+export default function FloatingNav({ navItems, className }: { navItems: NavItem[]; className?: string }) {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
 
