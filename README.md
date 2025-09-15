@@ -3,7 +3,7 @@
 Modern, fast, and minimal developer portfolio built with **React + TypeScript + Vite + Tailwind CSS**  
 with **Framer Motion** animations and **i18n (EN/FR/PT)**.
 
-> Live: https://your-portfolio-domain.com  
+> Live: https://portfolio-3uqfmn02j-loanlvns-projects.vercel.app/ 
 > Repo: https://github.com/loanlvn/portfolio
 
 --- 
